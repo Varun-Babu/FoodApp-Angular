@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeLoginComponent } from './home-login/home-login.component';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { NearHotelsComponent } from './near-hotels/near-hotels.component';
 
 const myRoute : Routes=[
   {
@@ -14,6 +15,10 @@ const myRoute : Routes=[
     {
       path:"food",
       component:FoodPageComponent
+    },
+    {
+      path:"hotels",
+      component:NearHotelsComponent
     }
 ]
 
@@ -21,7 +26,8 @@ const myRoute : Routes=[
   declarations: [
     AppComponent,
     HomeLoginComponent,
-    FoodPageComponent
+    FoodPageComponent,
+    NearHotelsComponent
   ],
   imports: [
     BrowserModule,
