@@ -8,6 +8,7 @@ import { HomeLoginComponent } from './home-login/home-login.component';
 import { FoodPageComponent } from './food-page/food-page.component';
 import { NearHotelsComponent } from './near-hotels/near-hotels.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const myRoute : Routes=[
   {
@@ -20,6 +21,10 @@ const myRoute : Routes=[
     {
       path:"hotels",
       component:NearHotelsComponent
+    },
+    {
+      path:"contact",
+      component:ContactUsComponent
     }
 ]
 
@@ -29,7 +34,8 @@ const myRoute : Routes=[
     HomeLoginComponent,
     FoodPageComponent,
     NearHotelsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
