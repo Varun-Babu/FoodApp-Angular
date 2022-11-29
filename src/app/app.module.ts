@@ -9,6 +9,7 @@ import { FoodPageComponent } from './food-page/food-page.component';
 import { NearHotelsComponent } from './near-hotels/near-hotels.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute : Routes=[
   {
@@ -40,7 +41,8 @@ const myRoute : Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

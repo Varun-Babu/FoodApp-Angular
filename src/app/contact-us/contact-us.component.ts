@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
+  firstName=""
+  lastName=""
+  subject = ""
+
+  readalue =() =>
+  {
+    let data:any ={"FirstName":this.firstName,"LastName":this.lastName,"Subject":this.subject}
+  }
 
 }
